@@ -1,3 +1,29 @@
 @import url('../vendor/normalize.css');
 @import url('../vendor/fonts.css');
 @import url('../vendor/variables.css');
+@import url('../blocks/header/header.css');
+
+.page {
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.spinner {
+    width: 112px;
+    height: 112px;
+    border-radius: 50%;
+    border: 16px solid rgb(0, 0, 0);
+    border-right-color: #3498db;
+    animation: spin 1s ease infinite;
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
