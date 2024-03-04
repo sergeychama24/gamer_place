@@ -1,3 +1,5 @@
+import {renderLoading} from '../main.js'
+
 export const result = []
 export const key = "f35c3a30d54e474cb0bf6f725ad38c6f";
 

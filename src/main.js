@@ -4,10 +4,12 @@ import {getGamesList, result} from './components/api'
 //
 // const app = document.querySelector('#app')
 // app.innerHTML = ``
-(async () => {
-    await getGamesList(1);
-    await getGamesList(2);
-    await getGamesList(3);
 
-    console.log(result);
-})();
+const spinner = document.querySelector('.spinner');
+export function renderLoading(isLoading) {
+    if (isLoading) {
+        spinner.classList.add('active')
+    } else {
+        spinner.classList.remove('active')
+    }
+}

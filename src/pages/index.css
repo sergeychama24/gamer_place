@@ -3,17 +3,29 @@
 @import url('../vendor/variables.css');
 @import url('../blocks/header/header.css');
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 .page {
 }
 
 .main {
-    display: flex;
+    position: relative;
+    max-inline-size: 1440px;
+    margin: auto;
     justify-content: center;
     align-items: center;
     height: 100vh;
 }
 
 .spinner {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    visibility: hidden;
     width: 112px;
     height: 112px;
     border-radius: 50%;
@@ -21,6 +33,34 @@
     border-right-color: #3498db;
     animation: spin 1s ease infinite;
 }
+
+.spinner.active {
+    visibility: visible;
+}
+
+.hero {
+    position: relative;
+    max-block-size: 392px;
+    block-size: 66%;
+    border: 8px solid var(--primary-color);
+    border-top: none;
+
+}
+
+.hero__cover {
+    position: absolute;
+    offset: 0;
+    z-index: -1;
+    inline-size: 100%;
+    block-size: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.hero__content {
+    color: white;
+}
+
 
 @keyframes spin {
     to {
