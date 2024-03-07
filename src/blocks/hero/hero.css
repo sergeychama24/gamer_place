@@ -1,0 +1,8 @@
+.hero {
+    position: relative;
+    max-block-size: 392px;
+    block-size: 66%;
+    border: 8px solid var(--primary-color);
+    border-top: none;
+
+}

@@ -2,6 +2,7 @@
 @import url('../vendor/fonts.css');
 @import url('../vendor/variables.css');
 @import url('../blocks/header/header.css');
+@import url('../blocks/hero/hero.css');
 
 * {
     margin: 0;
@@ -10,6 +11,7 @@
 }
 
 .page {
+
 }
 
 .main {
@@ -36,15 +38,6 @@
 
 .spinner.active {
     visibility: visible;
-}
-
-.hero {
-    position: relative;
-    max-block-size: 392px;
-    block-size: 66%;
-    border: 8px solid var(--primary-color);
-    border-top: none;
-
 }
 
 .hero__cover {
